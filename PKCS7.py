@@ -6,6 +6,9 @@ def encode(text ,block_size):
     if amount_to_pad == 0:
         amount_to_pad = block_size
     pad = amount_to_pad
+    if type(text)==bytes:
+        return text + bytes([pad] * amount_to_pad)
+
     return text.encode() + bytes([pad] * amount_to_pad)
 
 

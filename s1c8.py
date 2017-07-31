@@ -23,8 +23,7 @@ def check(filename):
         if sc > ans[1]:
             ans=[s,sc]
 
+
     print(ans)
 
-
-check('s1c8.txt')
 
